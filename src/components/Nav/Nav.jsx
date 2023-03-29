@@ -5,7 +5,7 @@ import React from "react";
 export default function Nav(props){
     return (
         <div className={styles.general}>
-            <SearchBar></SearchBar>
+            <SearchBar onSearch={ (characterID) => props.onSearch(characterID)}></SearchBar>
         </div>
     )
 }

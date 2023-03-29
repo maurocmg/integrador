@@ -12,8 +12,10 @@ function App () {
       .then((response) => response.json())
       .then((data) => {
           if (data.name) {
-            setCharacters((oldChars) => [...oldChars, data]);
-          } else {
+            if (characters.filter((char) => char.id === data.id).length === 0){
+              setCharacters((oldChars) => [...oldChars, data])
+            }}
+            else {
             window.alert('No hay personajes con ese ID');
           }
       });

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+input {
+  background-color: rgba(238, 209, 106, 0.6);
+  font-family: cursive;
+  border-radius: 10px;  
+  border-color: rgb(160, 136, 57);
+  outline: none;
+}
+button {
+  border-radius: 10px;
+  border-color: rgb(160, 136, 57);
+  color: rgba(243, 222, 60, 0.92);
+  background-color: #4a4f58;
+}
+
+button:hover {
+  color: #4a4f58;
+  background-color: rgba(243, 222, 60, 0.92);
+  cursor: pointer;
+}
